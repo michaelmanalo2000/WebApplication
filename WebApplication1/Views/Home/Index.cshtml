@@ -1,0 +1,14 @@
+﻿@model  WebApplication1.Models.ModelCounter
+@{
+    ViewBag.Title = "Home Page";
+
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<div >
+    <h1>Current Counter : @Model.CurrentCounter</h1>
+    @Html.ActionLink("Add Counter", "AddCounter", @Model, new { @class = "btn btn-primary btn-large" })
+</div>
+
+
+
+
